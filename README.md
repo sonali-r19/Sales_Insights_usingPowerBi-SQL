@@ -10,7 +10,7 @@ a) Connected to a MySQL database to query raw sales data.
 b) Used the INNER JOIN to connect the 'Transactions' Table and 'Date' Table to query the database in comprehensive manner. 
 # SELECT sales.transactions.*,sales.date.* FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date;#
 c) Used the 'SUM' function to get an idea of overall revenue made by the Company over the 4 year time period(2017-2020) and        also wrote year-wise specific query to find the revenue made in each of the years (viz. 2017,2018,2019,2020)
-# SELECT SUM(sales.transactions.sales_amount) FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date = sales.date.date where sales.date.year=2018#
+# SELECT SUM(sales.transactions.sales_amount) FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date = sales.date.date where sales.date.year=2018;#
 d)Exported the final query results to Power Bi for visualization.
 
 # PowerBi 
